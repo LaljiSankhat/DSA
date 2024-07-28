@@ -30,6 +30,7 @@ public class BsSecond {
          System.out.println(t);       // System.out.println(binarySearch(arr, 0, 0, 2, 3, 11, 3, 2));
         Scanner sc = new Scanner(System.in);
         // int a = sc.
+        sc.close();
     }
 
 }

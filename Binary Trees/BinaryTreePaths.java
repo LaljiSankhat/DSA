@@ -12,6 +12,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BinaryTreePaths {
+    private static class  Node {
+        int val;
+        Node left;
+        Node right;
+        public Node(int data){
+            this.val = data;
+        }
+    }
     public static void helper(Node root,List<String> l,String s){
         if(root == null) {
             return;
