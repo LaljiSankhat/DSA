@@ -34,6 +34,14 @@ beginWord != endWord
 All the words in wordList are unique.
 */
 
+/*
+    to solve this here we have to find only minimum sequence length
+    so we put the start word with length 1 in queue
+    now we check all possible word 
+    if word is in the wordList or set then we put it in the queue with the lenght prev + 1
+    also we erase it from set becuese we alredy taken it so we not need to got there second time
+*/
+
 int wordLadderI(string startWord, string endWord, vector<string> &wordList){
     queue<pair<string, int>> q;
     q.push({startWord, 1});

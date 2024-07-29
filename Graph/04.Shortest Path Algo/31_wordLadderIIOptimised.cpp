@@ -7,6 +7,7 @@ using namespace std;
 
 // step 1 : apply wordLadder 1 and store the word with level where it is occured in map
 // s2 : now backTrack in map 
+// in backtraking we put only that word which has low then our currnt word
 
 
 // declare globally
@@ -34,7 +35,7 @@ void dfs(string word, vector<string> &seq){
             if(mpp.find(word) != mpp.end() && mpp[word] == steps - 1){
                 seq.push_back(word);
                 dfs(word, seq);
-                seq.pop_back();
+                seq.pop_back(); // backtrak
             }
         }
         word[i] = original;

@@ -44,6 +44,8 @@ vector<vector<string>> wordLadderII(string startWord, string endWord, vector<str
     unordered_set<string> st(wordList.begin(), wordList.end());
     queue<vector<string>> q;
     q.push({startWord});
+    // to store which words we are usign at level so we can remove after all work has been done 
+    // of that word at that level
     vector<string> usedOnLevel;
     usedOnLevel.push_back(startWord);
     int level = 0;
@@ -52,7 +54,7 @@ vector<vector<string>> wordLadderII(string startWord, string endWord, vector<str
     while(!q.empty()){
         vector<string> vec = q.front();
         q.pop();
-        // erase words that has been used previos level
+        // if we get new level then we erase words that has been used previos level
         if(vec.size() > level){
             level++;
             for(auto it : usedOnLevel){
@@ -66,22 +68,23 @@ vector<vector<string>> wordLadderII(string startWord, string endWord, vector<str
             // the first sequence we get
             if(ans.size() == 0){
                 ans.push_back(vec);
-            } else if(ans[0].size() == vec.size()){
+            } else if(ans[0].size() == vec.size()){ // all sequences which are same size as minimum sequence
                 ans.push_back(vec);
             }
         }
 
+        // trying all possible word and take which are possible or in the wordList
         for(int i = 0; i < word.size(); i++){
             char original = word[i];
             for(char ch = 'a'; ch <= 'z'; ch++){
                 word[i] = ch;
                 // exist
-                if(st.count(word) > 0){
+                if(st.count(word) > 0){ // if it is in the wordList
                     vec.push_back(word);
                     q.push(vec);
                     // mark as visited
                     usedOnLevel.push_back(word);
-                    vec.pop_back();
+                    vec.pop_back(); // backtraking 
                 }
             }
             word[i] = original;

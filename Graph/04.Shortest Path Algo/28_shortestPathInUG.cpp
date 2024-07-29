@@ -24,6 +24,8 @@ void generateGraph(int n, int m, vector<int> adj[]){
 // first we define dist array as infinity
 // then apply BFS 
 // in queue we will store the node and dist of node from source 
+// by traversing all adjacent node if find small distance to reach adjacent node then prev then we update it
+// also put that node with new small distance
 
 vector<int> shortestPathInUndirectedGraph(int src, int v, vector<int> adj[]){
     // int dist[v] = {0};

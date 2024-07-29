@@ -21,6 +21,8 @@ void generateGraph(int n, int m, vector<int> adj[]){
 
 // previosoly we have solve this usinf dfs traversl here we use BFS traversal 
 // to solve this first we reverse all the edges and apply topo sort
+// we reverse becuase topo sort focus on inderee while safe nodes focus on outdegree
+// if out degree is zero then it is terminal node and safe node
 
 vector<int> eventualSafeStates(int v, vector<int> adj[]){
     vector<int> adjRev[v];
@@ -28,7 +30,7 @@ vector<int> eventualSafeStates(int v, vector<int> adj[]){
 
     for(int i = 0; i < v; i++){
         for(auto it : adj[i]){
-            adjRev[it].push_back(i);
+            adjRev[it].push_back(i); // reversing the direction of edge
             indegree[i]++;
         }
     }

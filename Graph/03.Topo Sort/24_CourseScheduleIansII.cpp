@@ -32,6 +32,9 @@ prerequisites[i].length == 2
 All the pairs prerequisites[i] are unique.
 */
 
+// so here concept of someone before someone so we apply topo sort
+// if there is no cyclic dependecy then it will return true
+
 bool canFinishCourses(int v, vector<vector<int>> &graph){
     vector<int> adj[v];
     int n = graph.size();

@@ -20,10 +20,8 @@ int longestCommenSubStringTab(int n, int m, string &s1, string &s2)
     int ans = 0;
 
     // Loops
-    for (int i = 1; i <= n; i++)
-    {
-        for (int j = 1; j <= m; j++)
-        {
+    for (int i = 1; i <= n; i++){
+        for (int j = 1; j <= m; j++){
 
             // if matching then add 1 into previos and assign it
             if (s1[i - 1] == s2[j - 1]){
@@ -41,16 +39,13 @@ int longestCommenSubStringTab(int n, int m, string &s1, string &s2)
 }
 
 // space optimization
-int longestCommenSubStringSpace(int n, int m, string &s1, string &s2)
-{
+int longestCommenSubStringSpace(int n, int m, string &s1, string &s2){
     vector<int> prev(m + 1, 0), cur(m + 1, 0);
     int ans = 0;
 
     // Loops
-    for (int i = 1; i <= n; i++)
-    {
-        for (int j = 1; j <= m; j++)
-        {
+    for (int i = 1; i <= n; i++){
+        for (int j = 1; j <= m; j++){
             // if matching then add 1 into previos and assign it
             if (s1[i - 1] == s2[j - 1]){
                 cur[j] = 1 + prev[j - 1];

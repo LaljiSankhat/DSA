@@ -19,6 +19,15 @@ void generateGraph(int n, int m, vector<int> adj[]){
 }
 
 // it is basically topo sort using BFS
+// to solve this we use concept of indegree of node
+// we know that if indegree of node is zero then we can go from there to another no one 
+// will enter to that node so it is become source node or else no one before that(concept of topo sort)
+// first we put all node puts in q which have indegree as zero
+// then we apply bfs here we add node to the the ans vector of bfs
+// then we traverse all adjacent node
+// decrease the indegree of adjacent Node becuase we reach adjacent node by current node 
+// now if its indegree become zero then we put it into the queue
+// if indegree not become zero then we know that someone node has before that adjacent node other then our current node
 
 vector<int> kahnsAlgo(int v, vector<int> adj[]){
     int indegree[v] = {0};

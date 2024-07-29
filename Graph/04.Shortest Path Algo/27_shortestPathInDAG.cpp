@@ -45,7 +45,7 @@ Expected Space Complexity: O(N)
 // here graph is with distances or wieghts
 // we have to find the shortest path of any node from src node
 
-// to solve this first do topo sort using dfs
+// to solve this first do topo sort using dfs by which we know from that where we can reach
 // now take the nodes out of the stack and relax the edges
 // for relaxation make a distance array with all infinity
 // mark 0 for src node
