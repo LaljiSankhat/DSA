@@ -88,6 +88,8 @@ int main(){
     int n = heights.size();
     int m = heights[0].size();
 
+    cout << pathWithMinEffort(heights) << endl;
+
     // tc = E log V
     // so for the grid we have n * m cell (nodes) for evry we have 4 direction
     // so E = N * M * 4
