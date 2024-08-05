@@ -9,7 +9,6 @@ public class BalancedBinaryTree {
         int data;
         Node left;
         Node right;
-        public String val;
         public Node(int data){
             this.data = data;
         }
