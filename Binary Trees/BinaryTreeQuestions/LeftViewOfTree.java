@@ -66,13 +66,5 @@ public class LeftViewOfTree {
         b.right = f;
         System.out.println(leftSideView(root));
         System.out.println(rightSideView(root));
-
-        HashMap<Integer, Integer> mp = new HashMap<>();
-
-        for(var i : mp.entrySet()){
-            i.k
-        }
-
-
     }
 }
