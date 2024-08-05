@@ -1,4 +1,12 @@
 public class SizeMaxSumHeight {
+    private static class Node{
+        int val;
+        Node right;
+        Node left;
+        public Node(int val){
+            this.val = val;
+        }
+    }
     static int size = 0;
     static int size(Node root){
         if(root == null) return 0;

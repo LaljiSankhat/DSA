@@ -1,6 +1,16 @@
 package BSTQuestions;
 
+import BinaryTreeQuestions.InvertBinaryTree;
+
 public class ConstructBST {
+    private static class Node{
+        int val;
+        Node right;
+        Node left;
+        public Node(int val){
+            this.val = val;
+        }
+    }
     public static Node constructBST(int[] arr,int l,int h){
         if(l > h) return null;
         int mid = l + (h - l)/2;

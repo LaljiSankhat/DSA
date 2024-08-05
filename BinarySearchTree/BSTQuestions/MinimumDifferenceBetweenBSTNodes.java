@@ -1,6 +1,14 @@
 package BSTQuestions;
 
 public class MinimumDifferenceBetweenBSTNodes {
+    private static class Node{
+        int val;
+        Node right;
+        Node left;
+        public Node(int val){
+            this.val = val;
+        }
+    }
     static Node temp = new Node(0);
     static int minDiff = Integer.MAX_VALUE;
     public static void helper(Node root){

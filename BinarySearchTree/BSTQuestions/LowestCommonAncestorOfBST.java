@@ -1,16 +1,19 @@
 package BSTQuestions;
 
+import BinaryTreeQuestions.InvertBinaryTree;
+
 import java.security.PublicKey;
 
-class Node{
-    int val;
-    Node left;
-    Node right;
-    public Node(int val){
-        this.val = val;
-    }
-}
+
 public class LowestCommonAncestorOfBST {
+    private static class Node{
+        int val;
+        Node right;
+        Node left;
+        public Node(int val){
+            this.val = val;
+        }
+    }
     public static Node lowestCommonAncestor(Node root,Node p,Node q){
         if(p == root || q == root) return root;
         if(p == q) return p;

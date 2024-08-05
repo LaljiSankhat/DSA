@@ -25,6 +25,14 @@ preorder is guaranteed to be the preorder traversal of the tree.
 inorder is guaranteed to be the inorder traversal of the tree.
  */
 public class ConstructBinaryTreeByPreorderInorder {
+    private static class Node{
+        int val;
+        Node right;
+        Node left;
+        public Node(int val){
+            this.val = val;
+        }
+    }
     public static Node helper(int[] preorder,int pl,int ph,int[] inorder,int il,int ih){
         if(pl > ph) return null;
         Node root = new Node(preorder[pl]);

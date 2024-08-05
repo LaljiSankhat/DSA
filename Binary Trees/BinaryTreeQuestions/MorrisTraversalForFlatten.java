@@ -5,6 +5,14 @@ package BinaryTreeQuestions;
  it is iterative traversal of tree  space complexity = O(1)
  */
 public class MorrisTraversalForFlatten {
+    private static class Node{
+        int val;
+        Node right;
+        Node left;
+        public Node(int val){
+            this.val = val;
+        }
+    }
     public static Node morrisTraversal(Node root){
         Node current = root;
         while(current != null){

@@ -18,6 +18,14 @@ Input: root = [3,0,4,null,2,null,null,1], low = 1, high = 3
 Output: [3,2,null,1]
  */
 public class TrimBST {
+    private static class Node{
+        int val;
+        Node right;
+        Node left;
+        public Node(int val){
+            this.val = val;
+        }
+    }
     public static void helper(Node root,int low,int high){
         if(root == null) return;
         while(root.left != null && (root.left.val < low || root.left.val > high)){ // trim

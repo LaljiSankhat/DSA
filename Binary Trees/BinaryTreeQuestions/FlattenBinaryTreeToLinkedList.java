@@ -12,6 +12,14 @@ Input: root = [1,2,5,3,4,null,6]
 Output: [1,null,2,null,3,null,4,null,5,null,6]
  */
 public class FlattenBinaryTreeToLinkedList {
+    private static class Node{
+        int val;
+        Node right;
+        Node left;
+        public Node(int val){
+            this.val = val;
+        }
+    }
 //    public static Node flatten(Node root){
 //        if(root.left == null && root.right == null) return root;
 //        Node temp = root;

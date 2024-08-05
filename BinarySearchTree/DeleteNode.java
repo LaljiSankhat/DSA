@@ -1,7 +1,17 @@
+import BinaryTreeQuestions.InvertBinaryTree;
+
 import java.util.LinkedList;
 import java.util.Queue;
 
 public class DeleteNode {
+    private static class Node{
+        int val;
+        Node right;
+        Node left;
+        public Node(int val){
+            this.val = val;
+        }
+    }
     static void nThLevel(Node root,int n){
         if(root == null) return;
         if(n == 1){

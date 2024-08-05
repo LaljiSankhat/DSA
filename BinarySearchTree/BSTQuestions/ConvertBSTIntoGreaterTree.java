@@ -17,6 +17,14 @@ Output: [1,null,1]
 
  */
 public class ConvertBSTIntoGreaterTree {
+    private static class Node{
+        int val;
+        Node right;
+        Node left;
+        public Node(int val){
+            this.val = val;
+        }
+    }
     public static void inorder(Node root){
         if(root == null) return;
         inorder(root.right);

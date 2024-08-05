@@ -4,6 +4,14 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class BoundaryOfTree {
+    private static class Node{
+        int val;
+        Node right;
+        Node left;
+        public Node(int val){
+            this.val = val;
+        }
+    }
     public static Node constructTree(String[] arr){
         Queue<Node> q = new LinkedList<>();
         int first = Integer.parseInt(arr[0]);

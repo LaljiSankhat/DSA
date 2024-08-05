@@ -7,6 +7,14 @@ Two binary trees are considered the same if they are structurally identical, and
 
 
 public class SameTree {
+    private static class Node{
+        int val;
+        Node left;
+        Node right;
+        public Node(int data){
+            this.val = data;
+        }
+    }
     public static boolean isSameTree(Node p,Node q) {
         if(q == null && p == null) return true;
         if(q == null || p == null) return false;

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ConstructBSTFromSortedList {
+
     public static class TreeNode{
         int val;
         TreeNode left;

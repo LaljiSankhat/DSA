@@ -15,6 +15,14 @@ Input: root = [1,null,3]
 Output: [1,3]
  */
 public class RightViewOfTree {
+    private static class Node{
+        int val;
+        Node right;
+        Node left;
+        public Node(int val){
+            this.val = val;
+        }
+    }
     public static int height(Node root){
         if(root == null || (root.left == null && root.right == null)) return 0;
         return 1 + Math.max(height(root.left),height(root.right));

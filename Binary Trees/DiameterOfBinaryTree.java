@@ -7,6 +7,14 @@ The length of a path between two nodes is represented by the number of edges bet
  */
 
 public class DiameterOfBinaryTree {
+    private static class Node{
+        int data;
+        Node left;
+        Node right;
+        public Node(int data){
+            this.data = data;
+        }
+    }
     public static int height(Node root){
         if(root == null || (root.left == null && root.right == null)) return 0;
         return 1 + Math.max(height(root.left),height(root.right));

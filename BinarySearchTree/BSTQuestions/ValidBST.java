@@ -1,6 +1,14 @@
 package BSTQuestions;
 
 public class ValidBST {
+    private static class Node{
+        int val;
+        Node right;
+        Node left;
+        public Node(int val){
+            this.val = val;
+        }
+    }
     static Node temp = null;
     static boolean flag = true;
     public static void inorder(Node root){

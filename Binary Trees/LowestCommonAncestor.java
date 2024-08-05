@@ -16,6 +16,14 @@ Explanation: The LCA of nodes 5 and 4 is 5, since a node can be a descendant of 
  */
 
 public class LowestCommonAncestor {
+    private static class Node{
+        int data;
+        Node left;
+        Node right;
+        public Node(int data){
+            this.data = data;
+        }
+    }
     static Node ans = new Node(-1);
     public static boolean isContains(Node root,Node a){
         if(root == null) return false;
@@ -54,7 +62,7 @@ public class LowestCommonAncestor {
         b.right = f;
 //        Node l = new Node(12);
 //        System.out.println(isContains(root,l));
-        System.out.println(lowestCommonAncestor(root,c,d).val);
+        System.out.println(lowestCommonAncestor(root,c,d).data);
 
     }
 }

@@ -3,24 +3,17 @@
 balance binary tree if difference of heights of right and left subtree atmost 1
  */
 
- class  Node {
-    int data;
-    Node left;
-    Node right;
-    public String val;
-    public Node(int data){
-        this.data = data;
-    }
-}
+
 public class BalancedBinaryTree {
-    // private static class  Node {
-    //     int data;
-    //     Node left;
-    //     Node right;
-    //     public Node(int data){
-    //         this.data = data;
-    //     }
-    // }
+    private static class  Node {
+        int data;
+        Node left;
+        Node right;
+        public String val;
+        public Node(int data){
+            this.data = data;
+        }
+    }
     public static int height(Node root){
         if(root == null || (root.left == null && root.right == null)) return 0;
         return 1 + Math.max(height(root.left),height(root.right));

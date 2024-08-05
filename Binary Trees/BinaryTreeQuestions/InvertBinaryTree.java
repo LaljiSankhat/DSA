@@ -13,15 +13,16 @@ Input: root = []
 Output: []
  */
 
-class Node{
-    int val;
-    Node right;
-    Node left;
-    public Node(int val){
-        this.val = val;
-    }
-}
+
 public class InvertBinaryTree {
+    private static class Node{
+        int val;
+        Node right;
+        Node left;
+        public Node(int val){
+            this.val = val;
+        }
+    }
     public static Node invertTree(Node root){
         if(root == null || (root.right == null && root.left == null)) return root;
         Node temp = invertTree(root.left);

@@ -4,6 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class InorderPredecessor {
+    private static class Node{
+        int val;
+        Node right;
+        Node left;
+        public Node(int val){
+            this.val = val;
+        }
+    }
     static int pred = -1;
     static int suc = -1;
     static Node temp = null;

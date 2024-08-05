@@ -3,6 +3,14 @@ import java.util.Queue;
 import java.util.Stack;
 
 public class PreInPost {
+    private static class Node{
+        int val;
+        Node right;
+        Node left;
+        public Node(int val){
+            this.val = val;
+        }
+    }
     
     static void pip(int n){
         if(n == 0) return;

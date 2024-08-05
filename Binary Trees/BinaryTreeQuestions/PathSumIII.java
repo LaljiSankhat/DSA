@@ -14,6 +14,14 @@ Input: root = [5,4,8,11,null,13,4,7,2,null,null,5,1], targetSum = 22
 Output: 3
  */
 public class PathSumIII {
+    private static class Node{
+        int val;
+        Node right;
+        Node left;
+        public Node(int val){
+            this.val = val;
+        }
+    }
     static int count = 0;
     public static void helper(Node root,int targetSum){
         if(root == null) return;

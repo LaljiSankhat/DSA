@@ -11,6 +11,14 @@ Given the root of a binary tree, return the zigzag level order traversal of its 
 Output: [[3],[20,9],[15,7]]
  */
 public class ZigzagLevelOrderTraversal {
+    private static class Node{
+        int val;
+        Node right;
+        Node left;
+        public Node(int val){
+            this.val = val;
+        }
+    }
     public static int height(Node root){
         if(root == null || (root.left == null && root.right == null)) return 0;
         return 1 + Math.max(height(root.left),height(root.right));

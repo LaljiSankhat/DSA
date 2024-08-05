@@ -16,6 +16,14 @@ null 7 null null 8 null
 null null 9 null
  */
 public class ConstructTreeByLevelOrderTraversal {
+    private static class Node{
+        int val;
+        Node right;
+        Node left;
+        public Node(int val){
+            this.val = val;
+        }
+    }
     public static Node constructTree(String[] arr){
         Queue<Node> q = new LinkedList<>();
         int first = Integer.parseInt(arr[0]);

@@ -1,6 +1,14 @@
 package BSTQuestions;
 
 public class MorrisTraversal {
+    private static class Node{
+        int val;
+        Node right;
+        Node left;
+        public Node(int val){
+            this.val = val;
+        }
+    }
     public static void morrisTraversal(Node root){
         Node current = root;
         while(current != null){

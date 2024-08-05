@@ -1,6 +1,8 @@
 package BSTQuestions;
 
 
+import BinaryTreeQuestions.InvertBinaryTree;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,6 +14,14 @@ Input: root1 = [2,1,4], root2 = [1,0,3]
 Output: [0,1,1,2,3,4]
  */
 public class AllElementsInTwoBSTInSortedOrder {
+    private static class Node{
+        int val;
+        Node right;
+        Node left;
+        public Node(int val){
+            this.val = val;
+        }
+    }
     public static void inorderByMorris(Node root,List<Integer> arr){
         if(root == null) return;
         Node current = root;

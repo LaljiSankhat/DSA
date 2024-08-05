@@ -1,13 +1,14 @@
 
-class Node{
-    int val;
-    Node right;
-    Node left;
-    public Node(int val){
-        this.val = val;
-    }
-}
+
 public class Implementation {
+    private static class Node{
+        int val;
+        Node right;
+        Node left;
+        public Node(int val){
+            this.val = val;
+        }
+    }
     static void display(Node root){
         if(root == null) return;
         System.out.print(root.val+" -> ");

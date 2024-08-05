@@ -1,7 +1,7 @@
 
 
 public class SearchInBST {
-    public static class Node{
+    private static class Node{
         int val;
         Node left;
         Node right;

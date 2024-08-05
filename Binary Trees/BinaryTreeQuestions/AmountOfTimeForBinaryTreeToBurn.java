@@ -28,6 +28,14 @@ Output: 0
 Explanation: At minute 0, the only node in the tree is infected, so we return 0.
  */
 public class AmountOfTimeForBinaryTreeToBurn {
+    private static class Node{
+        int val;
+        Node right;
+        Node left;
+        public Node(int val){
+            this.val = val;
+        }
+    }
     public static Node findNode(Node root,int start){ // tree always have start node
         if(root == null) return null;
         if(root.val == start) return root;
