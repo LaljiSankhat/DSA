@@ -9,6 +9,7 @@
         "valarray": "cpp",
         "random": "cpp",
         "chrono": "cpp",
-        "limits": "cpp"
+        "limits": "cpp",
+        "vector": "cpp"
     }
 }
