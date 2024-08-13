@@ -4,7 +4,6 @@ using namespace std;
 
 /*
     Number Of Islands
-Difficulty: MediumAccuracy: 60.65%Submissions: 38K+Points: 4
 You are given a n,m which means the row and column of the 2D matrix and an array of  size k denoting the number of operations.
 Matrix elements is 0 if there is water or 1 if there is land. Originally, the 2D matrix is all 0 which means there is 
 no land in the matrix. The array has k operator(s) and each operator has two integer A[i][0], A[i][1] means that you 
