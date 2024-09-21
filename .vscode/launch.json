@@ -2,6 +2,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "MergeSort",
+            "request": "launch",
+            "mainClass": "MergeSort",
+            "projectName": "DSA_77514479"
+        },
+        {
             "name": "(gdb) Bash on Windows Attach",
             "type": "cppdbg",
             "request": "attach",

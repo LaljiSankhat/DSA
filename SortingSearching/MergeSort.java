@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class MergeSort {
     static void merge(int[] arr, int l, int mid, int r) {
         int n1 = mid + 1 - l;
@@ -35,7 +37,8 @@ public class MergeSort {
 
     public static void main(String[] args) {
         int[] arr = { 6, 43, 5, 34, 7, 2 };
-        mergeSort(arr, 0, 5);
+        Arrays.sort(arr);
+        // mergeSort(arr, 0, 5);
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
