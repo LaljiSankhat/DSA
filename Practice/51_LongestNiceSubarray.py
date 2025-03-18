@@ -6,9 +6,7 @@
 
 def longestNiceSubarray(nums):
     res = 0
-
     cur = 0 
-
     l = 0
     for r in range(len(nums)):
         while (cur & nums[r]) != 0:
