@@ -17,7 +17,7 @@ int snakesAndLadders(vector<vector<int>>& board) {
         for(int column : columns){
             cells[lbl++] = {row, column};
         }
-        reverse(columns.begin(), column.end());
+        reverse(columns.begin(), columns.end());
     }
 
     vector<int> dist(n * n + 1, -1);
@@ -30,10 +30,12 @@ int snakesAndLadders(vector<vector<int>>& board) {
         q.pop();
 
         for(int next = curr + 1; next <= min(curr + 6, n * n); next++){
-            auto [row, column] = cells[next];   
+            int row = cells[next].first;
+            int column = cells[next].second;
+   
             int destination = board[row][column] != -1 ? board[row][column] : next;
             if(dist[destination] == -1){
-                dist[destination] = dist[cur] + 1;
+                dist[destination] = dist[curr] + 1;
                 q.push(destination);
             }
         }
