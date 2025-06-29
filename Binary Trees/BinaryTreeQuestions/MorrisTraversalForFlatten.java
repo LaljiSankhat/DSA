@@ -1,7 +1,6 @@
 package BinaryTreeQuestions;
 
-import java.util.ArrayList;
-import java.util.List;
+
 
 /*
  it is iterative traversal of tree  space complexity = O(1)
