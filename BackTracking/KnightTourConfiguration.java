@@ -31,7 +31,7 @@ Explanation: The above diagram represents the grid.
 The 8th move of the knight is not valid considering its position after the 7th move.
  */
 
-import com.sun.source.tree.BreakTree;
+
 
 public class KnightTourConfiguration {
     public static boolean helper(int[][] grid,int row, int col,int num){
@@ -106,11 +106,11 @@ public class KnightTourConfiguration {
                        {5,8,1},
                        {2,7,4}};
 
-       int[][] grid2 = {{0,11,16,5,20},
-                        {17,4,19,10,15},
-                        {12,1,8,21,6},
-                        {3,18,23,14,9},
-                        {24,13,2,7,22}};
+    //    int[][] grid2 = {{0,11,16,5,20},
+    //                     {17,4,19,10,15},
+    //                     {12,1,8,21,6},
+    //                     {3,18,23,14,9},
+    //                     {24,13,2,7,22}};
 
        boolean t = nKnight(grid);
         System.out.println(t);

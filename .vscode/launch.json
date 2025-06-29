@@ -3,6 +3,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SudokuSolver",
+            "request": "launch",
+            "mainClass": "SudokuSolver",
+            "projectName": "DSA_77514479"
+        },
+        {
+            "type": "java",
+            "name": "MaxKnights",
+            "request": "launch",
+            "mainClass": "MaxKnights",
+            "projectName": "DSA_77514479"
+        },
+        {
+            "type": "java",
+            "name": "KnightTourConfiguration",
+            "request": "launch",
+            "mainClass": "KnightTourConfiguration",
+            "projectName": "DSA_77514479"
+        },
+        {
+            "type": "java",
+            "name": "FourDirectionMazePath",
+            "request": "launch",
+            "mainClass": "FourDirectionMazePath",
+            "projectName": "DSA_77514479"
+        },
+        {
+            "type": "java",
             "name": "MorrisTraversalForFlatten",
             "request": "launch",
             "mainClass": "BinaryTreeQuestions.MorrisTraversalForFlatten",
