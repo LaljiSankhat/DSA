@@ -55,7 +55,7 @@ public class SmallestNumber {
     public static void main(String[] args) {
         int sum = 9;
         int digits = 2;
-        System.out.println(smallestNum(9,2));
+        System.out.println(smallestNum(sum,digits));
 
     }
 }

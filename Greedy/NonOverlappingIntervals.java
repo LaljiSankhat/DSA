@@ -26,7 +26,6 @@ Explanation: You don't need to remove any of the intervals since they're already
 
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
