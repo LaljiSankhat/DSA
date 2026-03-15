@@ -1,9 +1,5 @@
 package BSTQuestions;
 
-import BinaryTreeQuestions.InvertBinaryTree;
-
-import java.security.PublicKey;
-
 
 public class LowestCommonAncestorOfBST {
     private static class Node{

@@ -1,6 +1,6 @@
 package BSTQuestions;
 
-import BinaryTreeQuestions.InvertBinaryTree;
+
 
 public class ConstructBST {
     private static class Node{

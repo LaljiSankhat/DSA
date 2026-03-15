@@ -1,8 +1,5 @@
 package BSTQuestions;
 
-
-import BinaryTreeQuestions.InvertBinaryTree;
-
 import java.util.ArrayList;
 import java.util.List;
 

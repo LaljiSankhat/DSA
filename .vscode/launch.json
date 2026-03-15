@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PathSumIII",
+            "request": "launch",
+            "mainClass": "BinaryTreeQuestions.PathSumIII",
+            "projectName": "DSA_77514479"
+        },
+        {
+            "type": "java",
             "name": "SudokuSolver",
             "request": "launch",
             "mainClass": "SudokuSolver",

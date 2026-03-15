@@ -1,7 +1,5 @@
 package BSTQuestions;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class ConstructBSTFromSortedList {
 

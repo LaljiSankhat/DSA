@@ -1,7 +1,5 @@
 package BSTQuestions;
 
-import BinaryTreeQuestions.InvertBinaryTree;
-
 public class ConstructBSTFromPreorder {
     private static class Node{
         int val;

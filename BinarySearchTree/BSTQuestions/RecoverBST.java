@@ -1,9 +1,6 @@
 package BSTQuestions;
 
 
-import java.util.ArrayList;
-import java.util.List;
-
 /* // leetcode 99
  You are given the root of a binary search tree (BST),
   where the values of exactly two nodes of the tree were swapped by mistake.

@@ -110,6 +110,26 @@ void bfsOfNode(int i, int j, vector<vector<int>> &grid, vector<vector<int>> &vis
 
 }
 
+void dfs(int i, int j, vector<vector<int>> &grid, vector<vector<int>> &vis){
+    vis[i][j] = 1;
+
+    int n = grid.size();
+    int m = grid[0].size();
+
+    vector<pair<int, int>> directions = {{-1, -1}, {-1, 0}, {-1, 1}, 
+                                         {0, -1},           {0, 1}, 
+                                         {1, -1}, {1, 0}, {1, 1}};
+
+    for(auto dir : directions){
+        int newi = i + dir.first;
+        int newj = j + dir.second;
+
+        if(newi >= 0 && newi < n && newj >= 0 && newj < m && grid[newi][newj] == 1 && !vis[newi][newj]){
+            dfs(newi, newj, grid, vis);
+        }
+    }
+}
+
 int noOfIslands(vector<vector<int>> &grid){
     int m = grid.size();
     int n = grid[0].size();
@@ -119,7 +139,8 @@ int noOfIslands(vector<vector<int>> &grid){
     for(int i = 0; i < m; i++){
         for(int j = 0; j < n; j++){
             if(grid[i][j] == 1 && vis[i][j] == 0){
-                bfsOfNode(i, j, grid, vis);
+                // bfsOfNode(i, j, grid, vis);
+                dfs(i, j, grid, vis);
                 islands++;
             }
         }
@@ -132,7 +153,7 @@ int noOfIslands(vector<vector<int>> &grid){
 int main(){
     int n = 6;
     int m = 6;
-    vector<vector<int>> grid = {{0,1}, {1,0}, {1, 1}, {1, 0}};
+    vector<vector<int>> grid = {{0,1}, {0,0}, {1, 1}, {1, 0}};
     cout << noOfIslands(grid);
 
     // SC = O(N^2) (vis array) + O(N ^ 2) (for the queue)

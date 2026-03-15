@@ -1,8 +1,6 @@
 package BSTQuestions;
 
 
-import java.util.ArrayList;
-import java.util.List;
 
 /* // leetcode 669
 Given the root of a binary search tree and the lowest and highest boundaries as low and high,
